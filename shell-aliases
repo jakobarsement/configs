@@ -5,7 +5,7 @@ alias l='ls -aX'
 alias ff='find ~ -type f -name'
 alias t='tree --gitignore --noreport'
 alias e='exit'
-alias gg='git grep -Iin'
+alias gg='git grep -Iin' # Finds all case-insensitive occurences of a pattern while respecting .gitignore. Prints line, line number and file path
 
 # git aliases
 alias g='git'
