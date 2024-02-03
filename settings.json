@@ -1,0 +1,62 @@
+{
+    "workbench.editor.wrapTabs": true,
+    "terminal.integrated.fontFamily": "monospace",
+    "workbench.startupEditor": "none",
+    "editor.renderWhitespace": "none",
+    "editor.minimap.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.compactFolders": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.restoreWindows": "all",
+    "editor.renderLineHighlight": "gutter",
+    "workbench.colorCustomizations": {
+      "editor.lineHighlightBackground": "#13703b",
+      "quickInputTitle.background": "#00FF00",
+      "editor.lineHighlightBorder": "#272727"
+    },
+    "terminal.integrated.scrollback": 100000,
+    "editor.tokenColorCustomizations": {
+      // "comments": "#ff6600"
+      "comments": "#89512cab"
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "remote.WSL.useShellEnvironment": false,
+    "json.schemas": [],
+    "editor.inlineSuggest.enabled": true,
+    "editor.suggest.showMethods": true,
+    "editor.suggest.preview": true,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.snippetSuggestions": "bottom",
+    "workbench.activityBar.location": "top",
+    "security.allowedUNCHosts": ["wsl.localhost"],
+    "zig.initialSetupDone": true,
+    "zig.path": "/home/jakob_unix/.vscode-server/data/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+    "zig.zls.path": "/home/jakob_unix/.vscode-server/data/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+    "cmake.options.statusBarVisibility": "visible",
+    "window.zoomLevel": 1,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "[rust]": {
+      "editor.defaultFormatter": "rust-lang.rust-analyzer",
+      "editor.formatOnSave": true,
+      "editor.formatOnSaveMode": "file"
+    },
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false,
+      "rust": false
+    },
+    "workbench.colorTheme": "poimandres",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.commandsToSkipShell": [
+      "workbench.files.action.focusFilesExplorer",
+      "workbench.action.toggleSidebarVisibility"
+    ],
+    "workbench.panel.defaultLocation": "right",
+    "editor.cursorStyle": "block"
+  }
+  
