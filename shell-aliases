@@ -17,9 +17,27 @@ alias gcom='git checkout main'
 alias gcm='git commit -m'
 alias gf='git fetch'
 alias gr='git reset'
-alias grh1='git reset HEAD~1'
-alias grh2='git reset HEAD~2'
-alias grh3='git reset HEAD~3'
+
+# grh for bash 
+# example: `grh 7` will execute `git reset HEAD~7`
+grh() {
+    if [[ $1 =~ ^[0-9]+$ ]]; then
+        git reset HEAD~$1
+    else
+        echo "Please provide a valid number of commits to reset."
+    fi
+}
+
+# grh for fish
+# example: `grh 7` will execute `git reset HEAD~7`
+#function grh
+#    if string match -qr '^[0-9]+$' $argv[1]
+#        git reset HEAD~$argv[1]
+#    else
+#        echo "Please provide a valid number of commits to reset."
+#    end
+#end
+
 alias grs='git restore'
 alias gm='git merge'
 alias gst='git stash'
