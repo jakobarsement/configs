@@ -1,23 +1,4 @@
-# misc aliases
-alias et='echo $RANDOM_THEME'
-alias n='nvim'
-alias l='ls -aX'
-alias ff='find ~ -type f -name'
-alias t='tree --gitignore --noreport'
-alias e='exit'
-alias gg='git grep -Iin' # Finds all case-insensitive occurences of a pattern while respecting .gitignore. Prints line, line number and file path
-
-# git aliases
-alias g='git'
-alias gb='git branch'
-alias gclean='git clean -f -d'
-alias gco='git checkout'
-alias gcob='git checkout -b'
-alias gcom='git checkout main'
-alias gcm='git commit -m'
-alias gf='git fetch'
-alias gr='git reset'
-
+##### FUNCTIONS #####
 # grh for bash 
 # example: `grh 7` will execute `git reset HEAD~7`
 grh() {
@@ -28,16 +9,27 @@ grh() {
     fi
 }
 
-# grh for fish
-# example: `grh 7` will execute `git reset HEAD~7`
-#function grh
-#    if string match -qr '^[0-9]+$' $argv[1]
-#        git reset HEAD~$argv[1]
-#    else
-#        echo "Please provide a valid number of commits to reset."
-#    end
-#end
+##### ALIASES #####
 
+# misc aliases
+alias et='echo $RANDOM_THEME'
+alias n='nvim'
+alias l='ls -aX'
+alias ff='find ~ -type f -name'
+alias t='tree --gitignore --noreport'
+alias e='exit'
+
+# git aliases
+alias gg='git grep -Iin' # Finds all case-insensitive occurences of a pattern while respecting .gitignore. Prints line, line number and file path
+alias g='git'
+alias gb='git branch'
+alias gclean='git clean -f -d'
+alias gco='git checkout'
+alias gcob='git checkout -b'
+alias gcom='git checkout main'
+alias gcm='git commit -m'
+alias gf='git fetch'
+alias gr='git reset'
 alias grs='git restore'
 alias gm='git merge'
 alias gst='git stash'
@@ -53,9 +45,29 @@ alias gpullf='git pull -f'
 alias gcob='git checkout -b'
 alias ga='git add'
 alias gaa='git add .'
+alias gau='git update-index --assume-unchanged' # Locally untracks files from git so your code can differ from the repo
+alias gnau='git update-index --no-assume-unchanged' # Undo the git tracking removal of the previous command
 
 # rust
 alias cg='cargo'
 alias cgr='cargo run'
 alias cgc='cargo clippy'
 alias cgw='cargo watch -x run'
+
+########## FISH SHELL SPECIFIC ##########
+
+##### FUNCTIONS #####
+# grh for fish
+# example: `grh 7` will execute `git reset HEAD~7`
+#function grh
+#    if string match -qr '^[0-9]+$' $argv[1]
+#        git reset HEAD~$argv[1]
+#    else
+#        echo "Please provide a valid number of commits to reset."
+#    end
+#end
+
+###### KEYBINDS #####
+bind \e\[3\;5\~ 'kill-word'
+bind \cH 'backward-kill-word'
+bind \cU 'kill-whole-line'
