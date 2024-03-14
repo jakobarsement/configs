@@ -12,7 +12,7 @@ grh() {
 ##### ALIASES #####
 
 # misc aliases
-alias et='echo $RANDOM_THEME'
+alias et='echo $RANDOM_THEME' # Used to output the current zsh theme
 alias n='nvim'
 alias l='ls -aX'
 alias ff='find ~ -type f -name'
