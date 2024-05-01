@@ -30,6 +30,10 @@ alias gcom='git checkout main'
 alias gcm='git commit -m'
 alias gf='git fetch'
 alias gr='git reset'
+alias grh2='git reset HEAD~2'
+alias grh3='git reset HEAD~3'
+alias grh50='git reset HEAD~50'
+alias grh100='git reset HEAD~100'
 alias grs='git restore'
 alias gm='git merge'
 alias gst='git stash'
@@ -53,7 +57,6 @@ alias cg='cargo'
 alias cgr='cargo run'
 alias cgc='cargo clippy'
 alias cgw='cargo watch -x run'
-
 ########## FISH SHELL SPECIFIC ##########
 
 ##### FUNCTIONS #####
