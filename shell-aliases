@@ -9,9 +9,6 @@ alias t='tree --gitignore --noreport'
 alias e='exit'
 alias ask='claude -p'
 
-
-# git aliases
-
 # git aliases
 alias gg='git grep -Iin' # Finds all case-insensitive occurences of a pattern while respecting .gitignore. Prints line, line number and file path
 alias g='git'
@@ -49,8 +46,7 @@ alias gcob='git checkout -b'
 alias ga='git add'
 alias gaa='git add .'
 alias gau='git update-index --assume-unchanged' # Locally untracks files from git so your code can differ from the repo
-alias gnau='git update-index --no-assume-unchanged' # Undo the git tracking removal of the previous commandsource /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
+alias gnau='git update-index --no-assume-unchanged' # Undo the git tracking removal of the previous command
 
 # rust
 alias cg='cargo'
